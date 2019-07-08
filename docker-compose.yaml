@@ -1,0 +1,60 @@
+version: ENC[AES256_GCM,data:G83a,iv:WDXzlWXitiZQ5gG18pwOYg777baCC8J9vyUGA4+okpA=,tag:QYr61+EDCdaOK/JSsSkBaQ==,type:str]
+services:
+    db:
+        image: ENC[AES256_GCM,data:rAdmIG0McrLY//y6,iv:zk78ZhQgmadh9Qtaeo7WLJfRS4KXJED2x5USHLW6I5I=,tag:qMqkDoStZO70bEAAQYrseQ==,type:str]
+        volumes:
+        - ENC[AES256_GCM,data:R0DGiIJFKuuXCCP2TG2SUHZENjIUtg==,iv:XmtlMJuqvZLQRFViuoqFmp/9vqx6fR0IG7U/58nOfvE=,tag:asUa+Rs3pYQI7JAxqhfrGQ==,type:str]
+        environment:
+            MYSQL_ROOT_PASSWORD_FILE: ENC[AES256_GCM,data:fG1VtwSyVItMkS67f7ZnplOCHLVlmEYLCGnG4+4=,iv:Bvh8NRNoNWd5mlm7DKALjj8bB43pIaCGa30+8lyisOY=,tag:9QRv/P4Xg2wUUvRajg8Olg==,type:str]
+            MYSQL_DATABASE: ENC[AES256_GCM,data:LCcSybuZIe9j,iv:OTcEzdi+MM6iUggYsKAKioiTliHdH/69R3VsV1RqA/k=,tag:ZxRQwh8KRlBawh8rVgCafQ==,type:str]
+            MYSQL_USER: ENC[AES256_GCM,data:zg1zQz8gpC6I,iv:DyjlNdhhyK2usf0DoVV+l/cQbxzDT5OvkddHOBUMVl0=,tag:yXgn37bVUt8ew1UcMuPnNQ==,type:str]
+            MYSQL_PASSWORD_FILE: ENC[AES256_GCM,data:kX7C7D3MTnuvUfFXfT5PFJqQRVWjyYQa,iv:cEBF8L80DL9nLEADFnwojpkKEhzcB7/7exLHfm6nPgM=,tag:U+a5lmVL9WFbEe9GOQXbVQ==,type:str]
+        secrets:
+        - ENC[AES256_GCM,data:wmCnw6lW8uViwipK95Zcvw==,iv:kstfYLvoxIjUq29QJMstucyqwnEZlLlBPLcFTejFBFg=,tag:dkHN4a/eCF7Fk0dS81fV4w==,type:str]
+        - ENC[AES256_GCM,data:UfN30gp5/FNVtjw=,iv:N2mF8zJ7WZjulQaSxeK35ImDRb5sp43XLxcHU4QSQwI=,tag:GkT9OJcpJ7cX+UGlXsW1/A==,type:str]
+    wordpress:
+        depends_on:
+        - ENC[AES256_GCM,data:ytM=,iv:4XAL4qEsM/WRuoDKoi5ENHzsJRFkKBMpka3MZ4A90lU=,tag:WE/fCyMybVfUwXeh+nnRzQ==,type:str]
+        image: ENC[AES256_GCM,data:XcPwctjkPeXj+d16EudGCQ==,iv:ACTyo3v1kU4Xfaio6M99NEf7GaDqnlblyC+Wci7htWw=,tag:yeXrzEL4IQXsN3/5UEkF3Q==,type:str]
+        ports:
+        - ENC[AES256_GCM,data:7Oyc5j2rfQ==,iv:Ji5uJWbkh18WpvF7mQhtFXCv9lbweXS3oG4j5PmZ4s0=,tag:LyVaWWpTyO3i8WgFG+7srw==,type:str]
+        environment:
+            WORDPRESS_DB_HOST: ENC[AES256_GCM,data:Sbvk34Knsw==,iv:ZESJVAjZrxVkkEPb41bMZKqX57NlbX2jRfz0P16ektc=,tag:hljkFz9Df14RL4BJVqR+Qw==,type:str]
+            WORDPRESS_DB_USER: ENC[AES256_GCM,data:nqdFCt1p0u2R,iv:y2IjKVqwzu3Wzf86306Jrv36y71IcfmNjXrK+YL69LA=,tag:csDT959ULUCNsdYBPyc7AQ==,type:str]
+            WORDPRESS_DB_PASSWORD_FILE: ENC[AES256_GCM,data:Za03+oqwUlvJVRlw63UdWLtCA6CBgGD6,iv:TqLCb151RyZ3EUub8Wq4zz2D939INMwgZ+ODztET8SQ=,tag:6G5RyKzQTCmtaEJ1VDTl7A==,type:str]
+        secrets:
+        - ENC[AES256_GCM,data:WL/E6kJRhrhNteQ=,iv:fhrETsynFniKRlHY6feQ9J6UwPHsIkNTrd2gyKN8YFU=,tag:untAadtYfpaR2jFRdTgUOQ==,type:str]
+secrets:
+    db_password:
+        file: ENC[AES256_GCM,data:aK9+Ob3bd/u0UL59ZODy,iv:u9mQXZAAzXuSztihtfL+WMXDsH+S3TKUI4GdUyJyvRQ=,tag:U/OBxbemRmODFMsFjjFOjQ==,type:str]
+    db_root_password:
+        file: ENC[AES256_GCM,data:N/hI2kp1GIGruZBLxTVuD6bAM4E=,iv:dt94oaO3m9nXEkBQiEHASdCe/43hrYKWUp+yH0TM9MA=,tag:YpmG3rV4aZst7jxCSoSp+A==,type:str]
+volumes:
+    db_data: null
+sops:
+    kms: []
+    gcp_kms:
+    -   resource_id: projects/sops-246117/locations/global/keyRings/git-secrets/cryptoKeys/second-in-case-of-boulette
+        created_at: '2019-07-08T20:01:58Z'
+        enc: CiQA8/z9pqk42gBTB0Sl054DnfDU0qRPxA/Z0ManiWt0+1o2txsSSQAQ+lDFfSW2ZCaP+crgtND35SFfnVq1Zt4hRMVuwwIf1o6ETskLAVd0ufKEattLMnfLG/2dYqm0747/P1ml919oVOvraoZvc9s=
+    azure_kv: []
+    lastmodified: '2019-07-08T20:01:58Z'
+    mac: ENC[AES256_GCM,data:pViIIKPBCRgBuVp/zzdsNBCQPoTSel/6HE/r2BBVr+dBMo5ylLWD7Cmf1uC2T5/s8whCn94QEOmSHe15/YPz0gd00jkoeK5y8tuCckT5YqXep2d6nR0MP0DgVYfmzilKricLRnDc9maYP+NBJyYgREr8sMr7VBDbwpq5/WpEaMk=,iv:5BRaBEvAVRWM6Qsk2lHa1DFT/gSZp0ikQM0eLvx1GT4=,tag:aEWzDbPfcpmbPg5SG0gDNg==,type:str]
+    pgp:
+    -   created_at: '2019-07-08T20:01:58Z'
+        enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQEMA4G/az0SchfnAQf/ewlDh/BI91PVR6v51Z2KINpsXvfg9dB32WCZrwr6iTgQ
+            +PssVY8c6/R+NcrDpJJEBp2Ma+uTxfvWhpva+3GDpWSbgAhuw6kTQpTBZt5IaGek
+            0jwNtzj2qtr/NvNE9OYevjMfjOEHs4VlW688ezeqjea0uBgcArhzyw5GlWvsdx80
+            vdN38uOMSsL4Av2kGghCw5LGYASMCtecxV0881+I0nabavFdHfJmv2FtR/g8xCcn
+            QNhpYmskS5NlJwFdsCUvCzfp1nYkBiFqWN45mD4jdtx/X+DgLsXTlfuEWvU9HQKm
+            UrzbXyphL5afALeKVaZ1hvI0vdhTXA43/s+YKmVOXNJeAf6LFJgxohXilO5qP64k
+            0kIaGJY80NPYL145nFKMpSBZtmXuqbTC3LyG6Kd/mwFdA//PNjkYraV5CFCPxYxN
+            xhweEPIGRqRP7J+NJHY4lFH2oKM6zc5ks0hPgEAGVg==
+            =Z5Go
+            -----END PGP MESSAGE-----
+        fp: E0F12EA084256D41A4470B5A7496D178F1A20481
+    unencrypted_suffix: _unencrypted
+    version: 3.3.1
