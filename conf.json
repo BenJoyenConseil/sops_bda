@@ -1,0 +1,3 @@
+{
+       "conn_str": "mysql://presta5000:amettresurpostit@bastion_mega_secur/leakydb"
+}
