@@ -1,3 +1,25 @@
 {
-       "conn_str": "mysql://presta5000:amettresurpostit@bastion_mega_secur/leakydb"
+	"conn_str": "ENC[AES256_GCM,data:FqgCpudLyrilvATywheVjiu/P9lyS2bOkIUacAM0JaAr6uSNrbwN7FxVTE6UEc8q2/PHfCwZ7Q+eYjPvUW0=,iv:8SLnCUpMxWfK651LQw8up9E1+W/lhO5Dnnhpiul455Q=,tag:Km+q0Athn3Zz2Lf9Ozmevg==,type:str]",
+	"sops": {
+		"kms": null,
+		"gcp_kms": [
+			{
+				"resource_id": "projects/sops-246117/locations/global/keyRings/git-secrets/cryptoKeys/second-in-case-of-boulette",
+				"created_at": "2019-07-08T19:33:08Z",
+				"enc": "CiQA8/z9pioSAuYkUNCKjjmP9h7Zp8ChBkLqvoeZrQAPA1DmE90SSQAQ+lDFZUBQ+dZgcou/WLkM55oFBJxAXiOnkJJxNFfMU8spYXcbMGEbwJz90yXG3eYE8kmow/kKPNneDrSwZ61T7b4l8NEXDYw="
+			}
+		],
+		"azure_kv": null,
+		"lastmodified": "2019-07-08T19:33:09Z",
+		"mac": "ENC[AES256_GCM,data:JpvNA64YZpEf1rHDTOulBij0WkZ28JFh2H2qgT+zn+l3ds/dqzhY7WTzWAPD5FMCAuFamxOcO/MVO/X+nR4hRRFo0oCTr6VYTd9PQSbBLJVIiJU5OOP2cpnuf0ggUFVP+68KqbGL04ElzZIn7Popg5LaNgdGAer3O5w29VUtbFE=,iv:cDDPNaZTXGhNHRcTOXiTBg+LxR7cy9XAsDYTL2cTj1c=,tag:6ZOgaB6YS1whbosGZxarlw==,type:str]",
+		"pgp": [
+			{
+				"created_at": "2019-07-08T19:33:08Z",
+				"enc": "-----BEGIN PGP MESSAGE-----\n\nhQEMA4G/az0SchfnAQf9GqRcVwWoQ6lXulICVg/KVJhXhGRj9OLQJtT1HlUreAs6\n97XivIQjcofiin5VDid0+WTT7xVw8Wb92VWEdmqAHSuMiQNXVEQkjyhauLumlG8J\nxrOW94jgQOMH9iHEAhZ6MEI54wY70C4jaO7TFoRjLEBm9UkbUubSXW10CqT5Yy46\nwL7PTzQAAi1ahJavFoH2t2l5UUCynHlZqT2Y/+RmrIp5Iqyi5HY/yzBV7nOB6vUF\nhU7QxNbC927KNeIAK2TFXrp4WeGVn/jesDTgrMsFiA6mB7W5MYL38MAHkfU2OTfG\nuODkZz0U/dW8h+4LqsoLmL8uTDBs2xc9mslEcMqRo9JcAQzMQjPL/M5DJXtvQaFL\n5Y5rTV22Z0Uc0aRHVfviNLDTs3Rka8qqdrm2QNCeoNz0JzuJYDmjQkSz0F2b9zVH\n1+gObElGeKW+C1X+aEHTzG1FzZLuDM/M72fh1yA=\n=+3xt\n-----END PGP MESSAGE-----\n",
+				"fp": "E0F12EA084256D41A4470B5A7496D178F1A20481"
+			}
+		],
+		"unencrypted_suffix": "_unencrypted",
+		"version": "3.3.1"
+	}
 }
